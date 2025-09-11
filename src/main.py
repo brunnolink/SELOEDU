@@ -35,7 +35,7 @@ def get_user(id: str):
 
  
 @app.post("/add_user")
-def add_usuario(user: User):
+def add_user(user: User):
     new_id = str(len(users) + 1)
     new_user = {"id": new_user, **user.dict()}
     users.append(new_user)
