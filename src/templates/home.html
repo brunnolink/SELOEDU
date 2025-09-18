@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>SELOEDU - Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Bem-vindo ao <span style="color:#4facfe;">SELOEDU</span></h1>
+    <p>Seu gerenciador de aplicação de treinamentos.</p>
+    <p>Faça login para acessar o painel.</p>
+    <a href="{{ url_for('login') }}" class="button">Entrar</a>
+  </div>
+</body>
+</html>
